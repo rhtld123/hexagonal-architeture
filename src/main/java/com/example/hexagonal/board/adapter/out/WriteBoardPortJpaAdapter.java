@@ -2,13 +2,11 @@ package com.example.hexagonal.board.adapter.out;
 
 import com.example.hexagonal.board.application.port.out.WriteBoardPort;
 import com.example.hexagonal.board.domain.entity.Board;
+import com.example.hexagonal.common.WriteDatabaseAdapter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
-@Component
+@WriteDatabaseAdapter
 @RequiredArgsConstructor
-@Transactional
 public class WriteBoardPortJpaAdapter implements WriteBoardPort {
 
     private final BoardRepository boardRepository;

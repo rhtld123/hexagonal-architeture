@@ -6,6 +6,7 @@ import com.example.hexagonal.board.application.port.in.BoardDto;
 import com.example.hexagonal.board.application.port.in.BoardRequests;
 import com.example.hexagonal.board.application.port.in.GetBoardUseCase;
 import com.example.hexagonal.board.application.port.in.WriteBoardUseCase;
+import com.example.hexagonal.common.WebAdapter;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -14,9 +15,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@WebAdapter
 @RequiredArgsConstructor
 public class BoardAdapter {
 

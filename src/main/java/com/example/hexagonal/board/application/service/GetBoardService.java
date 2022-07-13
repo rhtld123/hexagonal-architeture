@@ -4,12 +4,12 @@ import com.example.hexagonal.board.application.port.in.BoardDto;
 import com.example.hexagonal.board.application.port.in.GetBoardUseCase;
 import com.example.hexagonal.board.application.port.out.GetBoardPort;
 import com.example.hexagonal.board.domain.entity.Board;
+import com.example.hexagonal.common.UseCase;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
-@Component
+@UseCase
 @RequiredArgsConstructor
 public class GetBoardService implements GetBoardUseCase {
 

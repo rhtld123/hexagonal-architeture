@@ -5,10 +5,10 @@ import com.example.hexagonal.board.application.port.in.BoardRequests.Create;
 import com.example.hexagonal.board.application.port.in.WriteBoardUseCase;
 import com.example.hexagonal.board.application.port.out.WriteBoardPort;
 import com.example.hexagonal.board.domain.entity.Board;
+import com.example.hexagonal.common.UseCase;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
 
-@Component
+@UseCase
 @RequiredArgsConstructor
 public class WriteBoardService implements WriteBoardUseCase {
 
